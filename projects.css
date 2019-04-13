@@ -1,0 +1,274 @@
+a { text-decoration: none; color:black } /* Globally */
+
+/* Each state */
+
+a:visited { text-decoration: none; color:black; }
+a:hover { text-decoration: none; color:black; }
+a:focus { text-decoration: none; color:black; }
+a:hover, a:active { text-decoration: none; color:black }
+
+/*.clearfix::after {
+        display: block;
+        clear: both;
+        height: 0;
+        font-size: 0;
+        content: '';
+        visibilty: hidden;
+      }
+      */
+header {
+        width: 100%;
+        background-color: #b2d8d8;
+        line-height:10px;
+        text-align: center;
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+      }
+      nav h2 {
+        max-width: 20%;
+        float: left;
+        font-size: 20px;
+        margin: 20px;
+        color: black;
+        font-family: 'Cormorant Garamond', serif;
+        letter-spacing: 1.3px;
+
+      }
+      nav ul {
+        max-width: 80%;
+        display: block;
+        float: right;
+        list-style-type: none;
+      }
+      nav ul li {
+        display: inline-block;
+      }
+      nav ul li a {
+        display: block;
+        text-align: center;
+        padding: 5px 30px;
+        text-decoration: none;
+        color: black;
+      }
+      nav ul li a:hover {
+        color: white;
+      }
+
+
+h1 {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 0;
+      margin-top: 15%;
+      color: white;
+      font-family: 'Meddon', cursive;
+      /*font-size:70px;*/
+      /*font-size: 70px;*/
+       font-size: calc(60px + (26 - 14) * ((00vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+      text-align: center;
+
+}
+
+
+
+button {
+      position: relative;
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 5px;
+      text-align: center;
+      color: white;
+      display: block;
+    max-width: 300px;
+    margin: auto;
+      top: -20%;
+
+        background: black;
+        padding:20px 30px;
+        font-size: 2vh;
+
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        text-decoration-color: none;
+        letter-spacing: 1.3px;
+}
+
+button:hover {
+      background: #b2d8d8;
+}
+
+body{
+      margin:0;
+      padding: 0;
+      height: 100vh;
+
+
+}
+
+
+      /* Any screen over 1024px wide will have the defaults applied*/
+      body {
+        background-color: black;
+      }
+      .container {
+        width: 1024px;
+        margin: 0 auto;
+
+        font-size: 0;
+      }
+      
+
+     
+
+    
+
+.text:hover {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  left: 0%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: right;
+  
+}
+     
+      /* Tablet sizes */
+      /*
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        body {
+          background-color: black;
+        }
+        .container {
+          width: 100%;
+        }
+        .thumb {
+          width: 20%;
+          margin: 30%;
+          float: left;
+          margin-top: 120px;
+        }
+      }
+      /* take a look at this media query, this targets device width and height */
+      /*
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        body {
+           background-color: black;
+         }
+      }
+      /* smallers screens and mobile phones */
+      /*
+      @media only screen and (max-width: 767px) {
+        body {
+          background-color: black;
+        }
+        .container {
+          width: 100%
+        }
+        .thumb {
+          width: 40%;
+          margin: 5.1%;
+          float: center;
+          margin-top: 120px;
+        }
+        
+      }
+      */
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* Center website */
+.main {
+
+  max-width: 1000px;
+  margin-top: 50px;
+
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 30px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  margin-left: 20%;
+  width: 100%;
+
+
+
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 80px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .column {
+          float: left
+       width: 80%;
+       margin-left: 25%
+  }
+
+      } 
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+    margin-left: 25%
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    margin-left: 0%
+  }
+}
+
+h3{ 
+float: center;
+text-align: center;
+font-size: 40px;
+font-family: 'Meddon', cursive;
+   font-size: calc(30px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+ }
+
+.content:hover {
+  background-color: #b2d8d8;
+}
